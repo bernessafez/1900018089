@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Registrasi</title>
+</head>
+<body>
+	<form action="signup.php" method="POST">
+		<fieldset>
+			<legend>Form Registrasi</legend>
+			<p>
+				<label>Nama :</label>
+				<input type="text" name="nama">
+			</p>
+			<p>
+				<label>Username : </label>
+				<input type="text" name="username">
+			</p>
+			<p>
+				<label>Email : </label>
+				<input type="email" name="email">
+			</p>
+			<p>
+				<label>Password : </label>
+				<input type="password" name="password">
+			</p>
+			<p>
+				<label>Jenis Kelamin : </label>
+				<label><input type="radio" name="jenis_kelamin" value="laki-laki">Laki-laki</label>
+				<label><input type="radio" name="jenis_kelamin" value="perempuan">Perempuan</label>
+			</p>
+			<p>
+				<label>Agama : </label>
+				<select name="agama">
+					<option value="islam">Islam</option>
+					<option value="kristen">Kristen</option>
+					<option value="katolik">Katoli</option>
+				</select>
+			</p>
+			<p>
+				<label>Hobi : </label>
+				<label><input type="checkbox" name="hobi1" value="membaca">Membaca</label>
+				<label><input type="checkbox" name="hobi2" value="berenang">Berenang</label>
+				<label><input type="checkbox" name="hobi3" value="ngoding">Ngoding</label>
+				<label><input type="checkbox" name="hobi4" value="Tidur">Tidur</label>
+			</p>
+			<p>
+				<label>Biodata Singkat : </label>
+				<textarea name="biodata_singkat"></textarea>
+			</p>
+			<p>
+				<input type="submit" name="submit" value="Daftar">
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>
